@@ -189,6 +189,13 @@
             tap-ms = <20>;
         };
 
+        lt_layer_short: lt_layer_short {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_LAYER_SHORT";
+            #binding-cells = <2>;
+            tapping-term-ms = <10>;
+            bindings = <&mo>, <&to>;
+        };
     };
 
     keymap {
@@ -267,10 +274,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB4  &trans  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mo 5   &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &mo 5             &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                                 &trans  &mkp MB4  &trans               &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans  &mkp MB1  &lt_layer_short 5 5  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans  &trans    &trans               &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &lt_layer_short 5 5            &trans  &trans                                           &trans
             >;
 
             #sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
