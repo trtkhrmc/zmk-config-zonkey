@@ -262,10 +262,10 @@
 
         layer_5 {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                    &kp F6  &kp F7            &kp F8  &kp F9             &kp F10
-&kp F11  &kp F12  &trans  &trans  &trans  &trans    &trans  &trans  &kp LS(LG(LEFT))  &trans  &kp LS(LG(RIGHT))  &kp ASTERISK
-&trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans  &kp HOME          &trans  &kp END            &kp EQUAL
-&trans   &trans   &trans  &trans  &trans  &trans            &trans  &trans                                                     &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                    &kp F6            &kp F7            &kp F8             &kp F9  &kp F10
+&kp F11  &kp F12  &trans  &trans  &trans  &trans    &trans  &kp HOME          &kp LS(LG(UP))    &kp END            &trans  &kp ASTERISK
+&trans   &trans   &trans  &trans  &trans  &trans    &trans  &kp LG(LS(LEFT))  &kp LS(LG(DOWN))  &kp LS(LG(RIGHT))  &trans  &kp EQUAL
+&trans   &trans   &trans  &trans  &trans  &trans            &trans            &trans                                                     &trans
             >;
 
             #sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
