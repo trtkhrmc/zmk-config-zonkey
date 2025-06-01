@@ -201,7 +201,7 @@
             compatible = "zmk,behavior-macro";
             bindings = <
                 &sl MOUSE     // Sticky Layer解除
-                &mo 5         // 一時レイヤー5に移行（ホールド中だけ）
+                &lt 5 K    // タップで通常キー、ホールドでLayer5へ
             >;
             label = "EXIT_AML_TO_L5_MO";
         };
