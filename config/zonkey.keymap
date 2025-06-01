@@ -53,7 +53,7 @@
         exit_aml_to_layer5: exit_aml_to_layer5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 5>;
+            bindings = <&mo 5>;
             label = "EXIT_AML_TO_LAYER5";
         };
     };
