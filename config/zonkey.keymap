@@ -49,6 +49,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        exit_aml_to_layer5: exit_aml_to_layer5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sl 6 &mo 5>;
+            label = "EXIT_AML_TO_LAYER5";
+        };
     };
 
     behaviors {
@@ -196,7 +203,6 @@
             tapping-term-ms = <10>;
             bindings = <&mo>, <&to>;
         };
-
     };
 
     keymap {
@@ -275,10 +281,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB4  &trans  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &to 5             &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                                 &trans  &mkp MB4  &trans               &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans  &mkp MB1  &exit_aml_to_layer5  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans  &trans    &trans               &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &exit_aml_to_layer5            &trans  &trans                                           &trans
             >;
 
             #sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
