@@ -199,7 +199,10 @@
 
         exit_aml_to_layer5_mo: exit_aml_to_layer5_mo  {
             compatible = "zmk,behavior-macro";
-            bindings = < &sl MOUSE>, <&mo 5>;
+            bindings = <
+                &sl MOUSE     // Sticky Layer解除
+                &mo 5         // 一時レイヤー5に移行（ホールド中だけ）
+            >;
             label = "EXIT_AML_TO_L5_MO";
         };
     };
