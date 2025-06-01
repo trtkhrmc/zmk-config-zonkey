@@ -196,6 +196,13 @@
             tapping-term-ms = <10>;
             bindings = <&mo>, <&to>;
         };
+
+        exit_aml_to_layer5_mo: exit_aml_to_layer5_mo  {
+            compatible = "zmk,behavior-macro";
+            label = "LT_LAYER_SHORT";
+            bindings = < &sl MOUSE>, <&mo 5>;
+            label = "EXIT_AML_TO_L5_MO";
+        };
     };
 
     keymap {
