@@ -197,14 +197,6 @@
             bindings = <&mo>, <&to>;
         };
 
-        exit_aml_to_layer5_mo: exit_aml_to_layer5_mo  {
-            compatible = "zmk,behavior-macro";
-            bindings = <
-                &sl MOUSE     // Sticky Layer解除
-                &lt 5 K    // タップで通常キー、ホールドでLayer5へ
-            >;
-            label = "EXIT_AML_TO_L5_MO";
-        };
     };
 
     keymap {
