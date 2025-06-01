@@ -194,11 +194,7 @@
             label = "LT_LAYER_SHORT";
             #binding-cells = <2>;
             tapping-term-ms = <10>;
-            bindings = <
-                &sl MOUSE,
-                &mo, 
-                &to
-           >;
+            bindings = <&mo>, <&to>;
         };
 
     };
