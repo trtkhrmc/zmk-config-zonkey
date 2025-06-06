@@ -284,10 +284,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &kp LG(UP)    &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans        &trans                                       &trans
+&trans  &trans  &trans  &trans  &trans                    &trans           &trans         &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &new_macro UP  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &new_macro LEFT  &kp DOWN       &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans           &trans                                    &trans
             >;
 
             #sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
