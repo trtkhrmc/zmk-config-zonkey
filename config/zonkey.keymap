@@ -58,6 +58,11 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
+
+        to_layer3 {
+            bindings = <&mo 3>;
+            key-positions = <38 39>;
+        };
     };
 
     macros {
@@ -326,10 +331,10 @@
 
         layer_5 {
             bindings = <
-&kp ESC    &kp F2        &kp F3        &kp F4   &kp F5                                         &kp F6            &kp F7            &kp F8             &kp F9         &kp F10
-&kp TAB    &kp F1        &kp F11       &kp F12  &trans             &trans              &trans  &kp HOME          &kp LS(LG(UP))    &kp END            &kp PAGE_UP    &kp ASTERISK
-&kp LSHFT  &trans        &trans        &trans   &trans             &trans              &trans  &kp LG(LS(LEFT))  &kp LS(LG(DOWN))  &kp LS(LG(RIGHT))  &kp PAGE_DOWN  &kp EQUAL
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &trans   &exit_5_to_layer3  &lt 3 INT_HENKAN            &trans            &trans                                                            &trans
+&kp ESC    &kp F2        &kp F3        &kp F4   &kp F5                    &kp F6            &kp F7            &kp F8             &kp F9         &kp F10
+&kp TAB    &kp F1        &kp F11       &kp F12  &trans  &trans    &trans  &kp HOME          &kp LS(LG(UP))    &kp END            &kp PAGE_UP    &kp ASTERISK
+&kp LSHFT  &trans        &trans        &trans   &trans  &trans    &trans  &kp LG(LS(LEFT))  &kp LS(LG(DOWN))  &kp LS(LG(RIGHT))  &kp PAGE_DOWN  &kp EQUAL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &trans   &trans  &trans            &trans            &trans                                                            &trans
             >;
 
             #sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
