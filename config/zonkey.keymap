@@ -124,20 +124,6 @@
             label = "NEW_MACRO";
         };
 
-        temp_disable_mouse_layer5: temp_disable_mouse_layer5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &macro_press
-                &set-input-listener mkp_input_listener_disabled
-                &mo 5
-                &macro_pause_for_release
-                &macro_release
-                &set-input-listener mkp_input_listener_enabled
-                &mo 5
-            >;
-        };
-
     };
 
     behaviors {
