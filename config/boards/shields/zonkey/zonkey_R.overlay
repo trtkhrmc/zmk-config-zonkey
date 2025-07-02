@@ -33,20 +33,6 @@
     };
 };
 
-/ {
-    mkp_input_listener_enabled {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <&zip_temp_layer 6 100000>;
-    };
-
-    mkp_input_listener_disabled {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <>;
-    };
-};
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
