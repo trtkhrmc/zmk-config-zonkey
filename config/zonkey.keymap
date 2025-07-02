@@ -37,18 +37,7 @@
 
 
 
-/ {
-    mkp_input_listener_enabled {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <&zip_temp_layer 6 250>;
-    };
-
-    mkp_input_listener_disabled {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-    };
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 6 250>; };
 
 &mt {
     flavor = "balanced";
