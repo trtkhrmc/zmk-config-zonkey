@@ -16,11 +16,12 @@
 };
 
 &zip_temp_layer {
+      require-prior-idle-ms = <200>;
       excluded-positions = <
           18 // J
           20 // L
           6  // U
-          8 // O
+          8  // O
       >;
   };
 / {
