@@ -1,4 +1,5 @@
 #include "zonkey.dtsi"
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -14,6 +15,14 @@
             ;
 };
 
+&zip_temp_layer {
+      excluded-positions = <
+          16 // J
+          18 // L
+          8  // U
+          10 // O
+      >;
+  };
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
