@@ -47,7 +47,6 @@
     mkp_input_listener_disabled {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <>;
     };
 };
 
