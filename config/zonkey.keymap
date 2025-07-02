@@ -35,7 +35,21 @@
 #define JP_HANZEN       GRAVE             // 半角/全角
 #define JP_BSLH  INT1         // (backslash)
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 6 250>; };
+
+
+/ {
+    mkp_input_listener_enabled {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&zip_temp_layer 6 250>;
+    };
+
+    mkp_input_listener_disabled {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <>;
+    };
+};
 
 &mt {
     flavor = "balanced";
