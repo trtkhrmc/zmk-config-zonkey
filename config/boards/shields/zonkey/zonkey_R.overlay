@@ -30,6 +30,11 @@
         device = <&trackball>;
 
         input-processors = <&zip_temp_layer 6 100000>;
+
+        scroll {
+             layers = <5>;  // layer5 がアクティブなら
+             input-processors = <&zip_xy_to_scroll_mapper>;
+        };
     };
 };
 
