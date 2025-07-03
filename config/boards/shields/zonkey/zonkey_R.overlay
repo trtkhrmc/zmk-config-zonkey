@@ -34,7 +34,6 @@
 
         scroll {
              layers = <5>;  // layer5 がアクティブなら
-             input-processors = <&zip_scroll_scaler 1 -1>;
         };
     };
 };
