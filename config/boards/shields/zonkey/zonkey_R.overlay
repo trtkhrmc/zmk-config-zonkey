@@ -30,7 +30,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_xy_scaler 9 10> , <&zip_temp_layer 6 100000>;
+        input-processors = <&zip_xy_scaler 1 1> , <&zip_temp_layer 6 100000>;
 
         scroll {
              layers = <5>;  // layer5 がアクティブなら
