@@ -36,7 +36,8 @@
         scroll {
              layers = <5>;  // layer5 がアクティブなら
              input-processors = <
-                            &zip_xy_to_scroll_mapper
+                   &zip_xy_scaler 2 3,   
+                   &zip_xy_to_scroll_mapper
               >;
         };
     };
